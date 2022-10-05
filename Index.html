@@ -14,6 +14,17 @@
 
     <script>
         
+        function getData(e){
+            const xhr = new XMLHttpRequest();
+            xhr.open("GET","jina.txt",true);
+            xhr.onload = function(){
+                if(xhr.status === 4){
+                    console.log(xhr.responseText)
+                }
+            }
+            xhr.open();
+
+        }
     </script>
 </body>
 </html>
